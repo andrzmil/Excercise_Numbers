@@ -35,7 +35,7 @@ diff_list = []
 #check if sum is positive
 for i in range(10):
     curr_sum = functools.reduce(sum, first_list[i]) - functools.reduce(sum,second_list[i])
-    print("Difference is " + str(curr_sum))
+    print("Difference of sum [" + ' '.join(str(e) for e in first_list[i]) + "] and sum [" + ' '.join(str(e) for e in second_list[i]) +  "] equals " + str(curr_sum))
     if curr_sum <= 0:
         print("Difference is negative or equals 0.")
         exit()
